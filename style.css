@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --main-color:   hsl(14deg 100% 57%);
+    --sec-color:    hsl(0deg 0% 93%);
+    --font-color:   hsl(217deg 5% 31%);
+}
+
+body {
+    width: 1400px;
+    padding: 50px 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    z-index: 0.5;
+    height: 3px;
+    background-color: var(--sec-color);
+}
+
+.header span, div {
+    z-index: 1;
+}
+
+.header .title {
+    display: flex;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+    width: fit-content;
+    height: 50px;
+    align-items: center;
+}
+
+.header .bef {
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    background-color: hsl(14deg 100% 78%);
+}
+
+.cat {
+    display: flex;
+    align-items: center;
+    color: black;
+    height: 50px;
+}
+
+.cat span, .cat a {
+    padding: 10px;
+}
+
+.cat span {
+    background-color: var(--sec-color);
+}
+
+.cat a {
+    background-color: var(--main-color);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    background-color: var(--sec-color);
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.title {
+    font-size: 18px;
+}
+
+.sub-title {
+    font-size: 12px;
+    color: var(--font-color);
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.status {
+    display: flex;
+    gap: 10px;
+}
